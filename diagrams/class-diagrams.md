@@ -76,3 +76,40 @@ SearchEngineError <|-- RegistrationError
 SearchContextManager *-- SearchContext
 SearchContext <|-- SkipSearchContext
 ```
+
+### [Passport JWT](https://github.com/mikenicholson/passport-jwt)
+
+```mermaid
+---
+title: passport-jwt Class Diagram
+---
+classDiagram
+class Strategy
+class JwtStrategy {
+  string token
+  authenticate(Request req, options)
+}
+class JwtVerifier {
+  fail(string message)
+  error(string message)
+  success(User user, string message)
+  _verify(Request req, payload, bool verified)
+  _verify(payload, bool verified)
+}
+
+class libAuthHeader["lib/auth_header.js"] {
+  parse(headerValue) Object
+}
+
+class libExtractJwt["lib/extract_jwt.js"] {
+  fromHeader(header_name) Function
+  fromBodyField(field_name) Function
+  fromUrlQueryParameter(param_name) Function
+  fromAuthHeaderWithScheme(auth_scheme) Function
+  fromAuthHeaderAsBearerToken() Function
+  fromExtractors(extractors) Function
+}
+
+Strategy <|-- JwtStrategy
+JwtVerifier *-- JwtStrategy
+```
