@@ -34,7 +34,7 @@ flowchart TD
 title: Simple Approach to Cause and Effect Diagrams (Flowchart)
 ---
 mindmap
-root((Problem)
+root((Problem))
   Cause A
     Cause C
   Cause B
@@ -65,4 +65,110 @@ mindmap
     Category D
       Usual Cause C
       Usual Cause D
+```
+
+## MVPS: IT Project Causes
+```mermaid
+mindmap
+root{{IT Project Problem}}
+  (Material<br/>Hardware/Software)
+  (Vendors)
+  (People)
+  (Systems)
+```
+
+## MCPS: Software Development Project Causes
+```mermaid
+mindmap
+root{{Software Development<br/>Project Problem}}
+  (Method)
+  (Code)
+  (People)
+  (Systems)
+```
+
+## Marketing Common Causes
+```mermaid
+mindmap
+root{{Marketing Problem}}
+  (Product/Service)
+    Cause
+  (Price)
+    Cause
+    Cause
+  (Place)
+    Cause
+  (Promotion)
+    Cause
+  (People/personnel)
+  (Process)
+    Cause
+      Cause
+  (Physical Evidence)
+    Cause
+  (Publicity)
+    Cause
+```
+
+## Manufacturing Common Causes
+```mermaid
+mindmap
+root{{Manufacturing Problem}}
+  (Machine)
+  (Method)
+  (Material)
+  (Man Power/Mind Power)
+  (Measurement)
+```
+
+## Service Industry Common Causes
+
+```mermaid
+mindmap
+root{{Service Problem}}
+  (Surroundings)
+  (Suppliers)
+  (Systems)
+  (Skills)
+```
+
+## Case Studies
+
+### Low Developer Velocity: Causes and Effects
+```mermaid
+mindmap
+root{{Low Developer Velocity}}
+  (Method)
+    too many meetings
+  (Code)
+    too much technical debt
+      not enough tests
+      outdated technology
+  (People)
+  (Systems)
+    development servers are down
+      server hardware is failing
+      firewall rules are incorrect
+      domain name setup is incorrect
+      went over the billing limit
+```
+
+### Server Procurement Takes Too Long: Causes and Effects
+```mermaid
+mindmap
+root{{Server Procurement Takes Too Long}}
+  (Material)
+    not sure what hardware requirements to use as a baseline
+  (Vendors)
+    convoluted, slow billing process
+  (People)
+    too many approvals required
+    unclear when costs for server are passed to client
+    client is unwilling to procure server
+      budget unavailable until milestone is met
+      does not see the need for the server
+      already has on premises servers
+      client does not want to use public cloud infrastructure
+  (Systems)
+    procurement is not automated
 ```
