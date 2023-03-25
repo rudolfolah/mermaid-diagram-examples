@@ -140,17 +140,35 @@ mindmap
 root{{Low Developer Velocity}}
   (Method)
     too many meetings
+    lack of proper planning
+    lack of agile methodologies
+    unclear requirements
   (Code)
     too much technical debt
       not enough tests
       outdated technology
+      code duplication
+      tightly coupled components
+      inconsistent coding standards
+    complex codebase
+    lack of proper documentation
   (People)
+    lack of necessary skillsets
+    inadequate team size
+    high employee turnover
+    communication barriers among team members
+    insufficient onboarding and training
+    burnout and low morale
   (Systems)
     development servers are down
       server hardware is failing
       firewall rules are incorrect
       domain name setup is incorrect
       went over the billing limit
+    slow or unstable development environment
+    lack of proper development tools
+    inadequate version control system
+    insufficient testing infrastructure
 ```
 
 ### Server Procurement Takes Too Long: Causes and Effects
@@ -159,8 +177,13 @@ mindmap
 root{{Server Procurement Takes Too Long}}
   (Material)
     not sure what hardware requirements to use as a baseline
+    obsolete hardware specifications
+    high demand for specific hardware components
   (Vendors)
     convoluted, slow billing process
+    limited vendor options
+    long lead times for hardware delivery
+    inconsistent communication from vendors
   (People)
     too many approvals required
     unclear when costs for server are passed to client
@@ -169,6 +192,11 @@ root{{Server Procurement Takes Too Long}}
       does not see the need for the server
       already has on premises servers
       client does not want to use public cloud infrastructure
+    lack of dedicated procurement personnel
+    miscommunication between teams
   (Systems)
     procurement is not automated
+    outdated procurement software
+    lack of integration between procurement and project management tools
+    manual tracking of procurement status
 ```
